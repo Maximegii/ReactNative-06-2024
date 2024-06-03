@@ -1,5 +1,9 @@
 import * as SplashScreen from "expo-splash-screen";
 import { Stack } from "expo-router";
+import React, { useCallback, useEffect, useState } from 'react';
+
+// Keep the splash screen visible while we fetch resources
+// SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   // charger les couleurs

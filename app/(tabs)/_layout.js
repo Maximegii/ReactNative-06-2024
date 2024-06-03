@@ -1,10 +1,19 @@
 import { Tabs } from "expo-router";
+import { View, Text, StyleSheet, Image } from "react-native";
 
 export default function TabLayout() {
   return (
     <Tabs>
-      <Tabs.Screen name="index" options={{ title: "Home" }} />
-      <Tabs.Screen name="settings" options={{ title: "Settings" }} />
+      <Tabs.Screen name="index" options={{ title: "Accueil",
+        tabBarIcon: () => (
+          <Image source={require('./../../assets/home.png')} style={{ width: 20, height: 20}} />
+        )
+       }}/>
+      <Tabs.Screen name="dons" options={{ title: "Dons",
+       tabBarIcon: () => (
+          <Image source={require('./../../assets/dons.png')} style={{ width: 20, height: 20}} />
+        )
+       }} />
     </Tabs>
   );
 }

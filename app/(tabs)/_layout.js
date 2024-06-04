@@ -14,6 +14,11 @@ export default function TabLayout() {
           <Image source={require('./../../assets/dons.png')} style={{ width: 20, height: 20}} />
         )
        }} />
+       <Tabs.Screen name="mentions" options={{ title: "Mentions L",
+       tabBarIcon: () => (
+          <Image source={require('./../../assets/justice.png')} style={{ width: 20, height: 20}} />
+        )
+       }} />
     </Tabs>
   );
 }

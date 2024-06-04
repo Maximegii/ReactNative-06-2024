@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Image } from "react-native";
+import { View, Text, StyleSheet, Image,  } from "react-native";
 
 export default function HomeScreen() {
   return (
@@ -7,6 +7,7 @@ export default function HomeScreen() {
       <Image 
       style={styles.img}
       source={require('./../../assets/splash.png')} />
+
     </View>
   );
 }
@@ -14,7 +15,7 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
+    justifyContent: "start",
     alignItems: "center",
 
   },
